@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+}
+
+.conteiner  {
+    
+    display: block;
+    text-align: center;
+}
+
+.conteiner h1 {
+    color: white;
+}
+
+.conteiner a {
+    color: white;
+}

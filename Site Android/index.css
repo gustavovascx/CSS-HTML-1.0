@@ -1,0 +1,143 @@
+@font-face {
+    font-family: droid;
+    src: url(fontes/idroid.otf)
+}
+
+
+
+body{
+    background-color:#308450;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    background-color: #74f77bc5;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:10px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 4px 4px 7px 0px #00000098;
+}
+
+
+nav > ul {
+    display: flex;
+    justify-content: left;
+    padding-top: px;
+    
+}
+
+nav li {
+    padding: 5px;
+    border: 2px solid transparent;
+    transition: 0.3s, border 0.3s;
+}
+
+nav li:hover {
+    border: solid 2px rgba(0, 0, 0, 0.233);
+    background-color: rgba(255, 255, 255, 0.534);
+    border-radius: 20px;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: white;
+    
+}
+
+main h1{ 
+    font-family: droid;
+    text-align: center;
+    padding: 20px;
+    
+    
+}
+
+main h2{ 
+    font-family: droid;
+    text-align: left;
+    padding: 20px
+    ;
+    
+}
+
+main p > a {
+    color: #76E554;
+    
+}
+
+main img {
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+.terceira {
+    display: flex; /* Torna a section um contêiner flexível */
+    justify-content: center; /* Alinha os itens filhos (a imagem) no centro horizontalmente */
+    text-align:center;
+}
+
+.terceira img {
+    width: auto;
+}
+
+.quarta {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    
+}
+
+.quinta{
+    padding-top: 25px;
+    
+    
+}
+
+
+
+.aprender{
+    background-color: #5cd399;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.aprender h3 {
+    padding-left: 20px;
+    
+}
+
+
+.final {
+    display: flex;
+    justify-content: left;
+    padding-top: 15px;
+    background-color: #6EBB96;
+    text-decoration: underline;
+    
+    
+    
+}
+
+
+.final-first {
+
+    padding-left: 10px;
+
+}
+
+.final-second {
+    padding-left: 100px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}

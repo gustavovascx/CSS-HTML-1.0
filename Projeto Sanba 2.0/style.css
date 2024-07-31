@@ -1,0 +1,421 @@
+                                    /* BOTÃO SWITCH       */
+/* Container para o switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Oculta o checkbox real */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Cria o slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px; /* Borda arredondada */
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%; /* Borda arredondada */
+}
+
+input:checked + .slider {
+    background-color: #000000; /* Cor do botão quando ligado */
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px); /* Move o botão para a direita */
+}
+
+  /*                              STATUS DO BOTÃO TOOLTIP (MENSAGEM TEMA CLARO/ESCURO) */
+
+#status{
+    text-align: left;
+    margin-right: 1250px;
+}
+                            /* EFEITO TOOLTIP */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    text-align: center;
+    position: relative;
+    left: 1%;
+}
+
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    background-color: #000000c5;
+    transition: 0.3s;
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+}
+
+
+/*                                      BARRA SUPERIOR */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 5rem;
+    background-color: #0a96ec;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.logo {
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+ }
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none
+}
+
+.navbar ul li {
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+.navbar ul li:hover {
+    opacity: 0.7;
+}
+
+.navbar ul a {
+    color: #fff;
+    font-size: 17px;
+}
+
+.menu-icon {
+    cursor: pointer;
+    display: none;
+}
+
+.menu-icon div {
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    margin:8px
+
+}
+
+
+@media (max-width:768px) {
+    .navbar ul{
+        position: absolute;
+        background: #0a96ec;
+        top: 80px;
+        left: -100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .menu-icon{display: block; 
+    }
+    .navbar ul li {
+        margin: 5px 0;
+    }
+    .navbar ul.open{
+        left: 0;
+    }
+
+    
+
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+@media (max-width:820px) {
+    .carrosel {
+        display: none;
+    }
+}
+
+
+
+.carrosel {
+    position: relative;
+    filter: drop-shadow(0px 0px 10px #000);
+    overflow: hidden;
+    height: 370px;
+    width: 800px;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    transition: 0.7s ease-in-out;
+    transform: translateX(0);
+}
+
+.carrosel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.container img {
+    width: 100%;
+}
+
+main {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+main h1 {
+    color: #3aaef7;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 20px;
+    text-shadow: #000000 1px 1px;
+}
+
+.h22 {
+    font-size: 150%;
+    color: #000000;
+    margin: 20px 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.sessões {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+    gap: 20px; 
+}
+
+.sessões section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.sessões img {
+    width: 50px; 
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.sessões h6 {
+    margin: 10px 0; 
+}
+
+.sessões p {
+    margin: 0; 
+}
+
+@media (max-width: 540px) {
+    .sessões {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 10px; 
+    }
+
+    .sessões section {
+        width: 100%; 
+        padding: 10px; 
+        border: none; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    }
+
+    
+}
+
+footer {
+    width: 100%;
+    color: #ffffff;
+    background-color: #0a96ec;
+    
+}
+
+#footer_content {
+    background-color: #1482c793;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 3rem 3.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    
+}
+
+
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: #ffffff;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;
+}
+
+#footer_social_media .footer-link:hover {
+opacity: 0.6;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#github {
+    background-color: #4267b3;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+
+}
+
+.footer-list .footer-link {
+    color: #ffffff;
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+    color: #000000;
+}
+
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer_subscribe p {
+    color: #fff;
+}
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+#input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button {
+    background-color:#0a96ec;
+    border: none;
+    color: #ffffff;
+    padding: 0px 1.75rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover{
+    opacity: 0.8s;
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}
