@@ -1,0 +1,46 @@
+body {
+    font-family:'passion one', cursive
+}
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    
+    
+}
+
+header h1 {
+    padding-top: 20px;
+    font-size: 3.8em;
+    
+}
+
+header h3 {
+    
+}
+
+header a {
+    color: lightgray;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+    
+}
+
+.primeira {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 3.5vw;
+
+}
+
+.primeira p {
+    display: flex;
+    justify-content: left;
+}
