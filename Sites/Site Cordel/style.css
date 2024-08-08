@@ -11,8 +11,8 @@ header {
 }
 
 header h1 {
-    padding-top: 20px;
-    font-size: 3.8em;
+    padding-top: 10px;
+    font-size: 1.8em;
     
 }
 
@@ -21,13 +21,13 @@ header h3 {
 }
 
 header a {
-    color: lightgray;
+    color: white;
     transition: 0.3s;
 }
 
 a:hover {
-    color: white;
-    text-decoration: underline;
+    color: lightgray;
+    text-decoration: none;
     
 }
 
@@ -36,11 +36,100 @@ a:hover {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-    font-size: 3.5vw;
+    font-size: 3.0vw;
 
 }
 
 .primeira p {
     display: flex;
     justify-content: left;
+}
+
+.segunda {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 3.0vw;
+    background-image: url(./imagens/background001.jpg);
+    color: white;
+    background-attachment: fixed;
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.segunda p {
+    background-color: rgba(211, 211, 211, 0.26);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+}
+
+.terceira {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 3.0vw;
+}
+
+.quarta {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 3.0vw;
+}
+
+.quinta {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 3.0vw;
+    background-image: url(./imagens/background002.jpg);
+    color: white;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.quinta p {
+    background-color: rgba(0, 0, 0, 0.311);
+    text-shadow: 1px 1px 0px black;
+    display: inline-block;
+    padding: 5px;
+}
+
+.sexta{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 3.0vw;
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+footer p {
+    font-size: 12px;
+    text-align: center;
+    display: block;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    transition: 0.2s;
+    color: lightgray;
+    text-decoration: none;
 }
